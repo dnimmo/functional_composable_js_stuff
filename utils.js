@@ -28,8 +28,6 @@ const fromNullable =
 // eslint-disable-next-line
 module.exports = {
   Box,
-  Left,
-  Right,
   fromNullable,
 };
 
