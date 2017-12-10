@@ -1,0 +1,24 @@
+{
+  "name": "functional_composable_js_stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1_box.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:dnimmo/functional_composable_js_stuff.git"
+  },
+  "author": "David Nimmo <dnimmo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
