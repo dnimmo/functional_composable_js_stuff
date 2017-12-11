@@ -36,10 +36,14 @@ const tryCatch =
     }
   };
 
+const returnValue =
+  x => x;
+
 // eslint-disable-next-line
 module.exports = {
   Box,
   fromNullable,
   tryCatch,
+  returnValue,
 };
 
