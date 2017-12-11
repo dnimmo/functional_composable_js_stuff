@@ -7,7 +7,6 @@ x => ({
     () => `First(${x})`,
 });
 
-// eslint-disable-next-line
 module.exports = {
   First,
 };

@@ -1,5 +1,5 @@
 const { List } = require('immutable-ext');
-const { Sum } = require('./monoids');
+const { Sum } = require('../utils/monoids/sum');
 
 describe('foldMap example', () => {
   it(

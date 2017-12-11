@@ -2,12 +2,15 @@ const { Map } = require('immutable-ext');
 
 const {
   First,
-} = require('./semigroups');
+} = require('../utils/semigroups/first');
 
 const {
   Sum,
+} = require('../utils/monoids/sum');
+
+const {
   All,
-} = require('./monoids');
+} = require('../utils/monoids/all');
 
 describe('concatenating two objects with Map', () => {
   it(

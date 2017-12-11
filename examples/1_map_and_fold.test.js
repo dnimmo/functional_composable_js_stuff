@@ -1,4 +1,4 @@
-const { Box } = require('./utils');
+const { Box } = require('../utils/functors/box');
 
 const nextCharForNumberString =
   str =>

@@ -1,4 +1,4 @@
-const { fromNullable } = require('./utils');
+const { fromNullable } = require('../utils/functors/either');
 
 
 const findColour =

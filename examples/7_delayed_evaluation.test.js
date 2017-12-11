@@ -1,4 +1,4 @@
-const { LazyBox } = require('./utils');
+const { LazyBox } = require('../utils/functors/box');
 
 describe('delaying evaluation with LazyBox', () => {
   it(

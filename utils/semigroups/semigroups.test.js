@@ -1,6 +1,6 @@
 const {
   First,
-} = require('./semigroups');
+} = require('./first');
 
 describe('First', () => {
   it(

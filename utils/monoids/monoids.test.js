@@ -1,9 +1,12 @@
 const {
   sum,
+  Sum,
+} = require('./sum');
+
+const {
   all,
   All,
-  Sum,
-} = require('./monoids');
+} = require('./all');
 
 describe('Sum', () => {
   it(

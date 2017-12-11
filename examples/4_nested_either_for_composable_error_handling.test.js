@@ -1,8 +1,10 @@
 const fs = require('fs');
 const {
   tryCatch,
+} = require('../utils/functors/either');
+const {
   returnValue,
-} = require('./utils');
+} = require('../utils/misc/misc');
 
 const returnDefaultPort =
   () => 3000;
@@ -17,11 +19,11 @@ const getPort =
         returnValue,
       );
 
-describe('', () => {
+describe('composable error handling with tryCatch', () => {
   it(
     'should return the port from a given config file',
     () =>
-      expect(getPort('config.json'))
+      expect(getPort('./files_for_testing/config.json'))
         .toBe(8888),
   );
 
