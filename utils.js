@@ -30,7 +30,7 @@ const fromNullable =
 const tryCatch =
   (f) => {
     try {
-      return (Right(f()));
+      return Right(f());
     } catch (e) {
       return Left(e);
     }
