@@ -26,7 +26,7 @@ const sum =
 const all =
   xs => xs.reduce((acc, current) => acc && current, true);
 
-// eslint-disable-next-line
+
 module.exports = {
   Sum,
   All,
