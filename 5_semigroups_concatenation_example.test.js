@@ -1,9 +1,13 @@
 const { Map } = require('immutable-ext');
+
+const {
+  First,
+} = require('./semigroups');
+
 const {
   Sum,
   All,
-  First,
-} = require('./semigroups');
+} = require('./monoids');
 
 describe('concatenating two objects with Map', () => {
   it(
@@ -36,7 +40,7 @@ describe('concatenating two objects with Map', () => {
           .toJS();
 
       expect(JSON.stringify(result))
-        .toEqual(JSON.stringify(expected));
+        .toBe(JSON.stringify(expected));
     },
   );
 });
