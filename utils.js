@@ -5,6 +5,12 @@ const Box =
     fold: f => f(x),
   });
 
+const LazyBox =
+  g => ({
+    map: f => LazyBox(() => f(g())),
+    fold: f => f(g()),
+  });
+
 const Right =
   x => ({
     chain: f => f(x),
@@ -42,6 +48,7 @@ const returnValue =
 // eslint-disable-next-line
 module.exports = {
   Box,
+  LazyBox,
   fromNullable,
   tryCatch,
   returnValue,
